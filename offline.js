@@ -28,9 +28,10 @@
       active:"xhr"
     },
     checkOnLoad:!1,
-    interceptRequests:!0,
+    interceptRequests:!1,
     reconnect:!0,
-    deDupBody:!1
+    deDupBody:!1,
+	  request:!1
   }, grab = function(obj, key) {
     var cur, i, j, len, part, parts;
     for (cur = obj, parts = key.split("."), i = j = 0, len = parts.length; j < len && (part = parts[i], 
